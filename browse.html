@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Browse reports — FindIt</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/app.js"></script>
+</head>
+
+<body data-page="browse">
+
+    <header id="site-header"></header>
+
+    <main class="main">
+
+        <section class="container page-head">
+            <div class="eyebrow">Community reports</div>
+
+            <h1>Browse the board</h1>
+
+            <p>
+                Have a look around. Someone may have already
+                found what you're looking for.
+            </p>
+        </section>
+
+        <section class="container page-content">
+
+            <div class="toolbar">
+
+                <input
+                    class="search-control"
+                    id="searchInput"
+                    type="search"
+                    placeholder="Search names, details, or places…"
+                    aria-label="Search reports"
+                >
+
+                <select
+                    id="categoryFilter"
+                    data-categories
+                    aria-label="Filter by category"
+                ></select>
+
+                <div class="filter-chips">
+                    <button class="chip active" data-type="">
+                        All items
+                    </button>
+
+                    <button class="chip" data-type="lost">
+                        Lost
+                    </button>
+
+                    <button class="chip" data-type="found">
+                        Found
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="item-grid" id="itemList">
+                <div class="loading">
+                    Loading reports…
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+</body>
+</html>

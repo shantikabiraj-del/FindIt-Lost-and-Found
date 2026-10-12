@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Sign in — FindIt</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/app.js"></script>
+</head>
+
+<body data-page="login">
+
+    <header id="site-header"></header>
+
+    <main class="auth-shell">
+
+        <form class="auth-card" id="authForm" data-mode="login">
+
+            <div class="eyebrow">Welcome back</div>
+
+            <h1>Sign in to FindIt</h1>
+
+            <p>Pick up where your community left off.</p>
+
+            <div id="formMessage"></div>
+
+            <div class="field">
+                <label for="email">Email address</label>
+
+                <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    placeholder="you@example.com"
+                >
+            </div>
+
+            <div class="field">
+                <label for="password">Password</label>
+
+                <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    autocomplete="current-password"
+                    required
+                    placeholder="Your password"
+                >
+            </div>
+
+            <button
+                class="btn btn-primary form-submit"
+                type="submit"
+            >
+                Sign in
+            </button>
+
+            <p class="auth-footer">
+                New to FindIt?
+                <a href="/pages/register">Create an account</a>
+            </p>
+
+        </form>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+</body>
+</html>

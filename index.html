@@ -1,0 +1,245 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta
+        name="description"
+        content="A friendly community lost and found. Report lost or found belongings and help bring them home."
+    >
+
+    <title>FindIt — Lost something? Let's bring it home.</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/app.js"></script>
+</head>
+
+<body data-page="home">
+
+    <header id="site-header"></header>
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section class="container hero">
+
+            <div>
+                <div class="eyebrow">Your community lost & found</div>
+
+                <h1>
+                    Lost something?<br>
+                    <span>Let's bring it home.</span>
+                </h1>
+
+                <p class="hero-copy">
+                    A missing key. A favorite backpack. A four-legged friend.
+                    FindIt connects neighbors to the things—and companions—they're looking for.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="/pages/report-lost">
+                        I lost something <span>→</span>
+                    </a>
+
+                    <a class="btn btn-outline" href="/pages/report-found">
+                        I found something
+                    </a>
+                </div>
+
+                <div class="trust-row">
+                    <span><b class="trust-dot">✓</b> Free for everyone</span>
+                    <span><b class="trust-dot">✓</b> Community-powered</span>
+                    <span><b class="trust-dot">✓</b> Here to help</span>
+                </div>
+            </div>
+
+            <div class="hero-art" aria-label="Illustration of neighbors finding lost items">
+
+                <div class="art-sun"></div>
+
+                <div class="art-card one">
+                    <span class="item-emoji">🔑</span>
+
+                    <div>
+                        <strong>Found: house keys</strong>
+                        <small>Maple Park · just now</small>
+                    </div>
+                </div>
+
+                <div class="art-card two">
+                    <span class="item-emoji">🎒</span>
+
+                    <div>
+                        <strong>Could this be yours?</strong>
+                        <small>A match might be close</small>
+                    </div>
+                </div>
+
+                <div class="art-pin">📍</div>
+                <div class="art-shape"></div>
+
+            </div>
+
+        </section>
+
+        <!-- Features Section -->
+        <section class="section" style="background:#fff">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow">Good things happen together</div>
+
+                        <h2>A little help goes a long way.</h2>
+
+                        <p>
+                            FindIt makes it easy to turn a lost-and-found
+                            moment into a happy ending.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">⌕</div>
+
+                        <h3>Search nearby</h3>
+
+                        <p>
+                            Browse recent reports from your neighborhood
+                            and filter by what you're looking for.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">♡</div>
+
+                        <h3>Share the details</h3>
+
+                        <p>
+                            Post a simple, helpful description so the right
+                            person can spot a possible match.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">↗</div>
+
+                        <h3>Make the connection</h3>
+
+                        <p>
+                            Reach out to a reporter, coordinate safely,
+                            and get a favorite thing back where it belongs.
+                        </p>
+                    </article>
+
+                </div>
+
+                <!-- How It Works -->
+                <div class="steps">
+
+                    <div class="step">
+                        <span class="step-num">1</span>
+
+                        <div>
+                            <h3>Report it</h3>
+                            <p>Lost or found, add the details others need.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-num">2</span>
+
+                        <div>
+                            <h3>Find a match</h3>
+                            <p>Browse items and see likely matches.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <span class="step-num">3</span>
+
+                        <div>
+                            <h3>Bring it home</h3>
+                            <p>Contact the reporter and arrange a safe handoff.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Recently Reported Section -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <div class="eyebrow">Fresh from the community</div>
+
+                        <h2>Recently reported</h2>
+
+                        <p>
+                            Take a look—what you're looking for could be right here.
+                        </p>
+                    </div>
+
+                    <a class="text-link" href="/pages/browse">
+                        Browse all reports →
+                    </a>
+
+                </div>
+
+                <div class="item-grid" id="recentItems">
+                    <div class="loading">Loading recent reports…</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section" style="padding-top:0">
+
+            <div
+                class="container"
+                style="background:var(--green);border-radius:20px;padding:38px;color:white;display:flex;justify-content:space-between;gap:20px;align-items:center"
+            >
+
+                <div>
+                    <h2 style="font-size:27px;margin-bottom:6px">
+                        Someone out there can help.
+                    </h2>
+
+                    <p style="margin:0;color:#d8e9df">
+                        Make the first move. Your report is free and takes just a couple of minutes.
+                    </p>
+                </div>
+
+                <a
+                    class="btn"
+                    style="background:white;color:var(--green);white-space:nowrap"
+                    href="/pages/register"
+                >
+                    Join the community →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+</body>
+</html>

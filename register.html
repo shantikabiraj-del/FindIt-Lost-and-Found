@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Create an account — FindIt</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/app.js"></script>
+</head>
+
+<body data-page="register">
+
+    <header id="site-header"></header>
+
+    <main class="auth-shell">
+
+        <form class="auth-card" id="authForm" data-mode="register">
+
+            <div class="eyebrow">Join your neighbors</div>
+
+            <h1>Create your account</h1>
+
+            <p>It only takes a minute to start helping.</p>
+
+            <div id="formMessage"></div>
+
+            <div class="field">
+                <label for="name">Your name</label>
+
+                <input
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    minlength="2"
+                    maxlength="100"
+                    placeholder="Alex Morgan"
+                >
+            </div>
+
+            <div class="field">
+                <label for="email">Email address</label>
+
+                <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    placeholder="you@example.com"
+                >
+            </div>
+
+            <div class="field">
+                <label for="password">Password</label>
+
+                <input
+                    id="password"
+                    type="password"
+                    name="password"
+                    autocomplete="new-password"
+                    required
+                    minlength="8"
+                    placeholder="At least 8 characters"
+                >
+
+                <span class="hint">Use at least 8 characters.</span>
+            </div>
+
+            <button
+                class="btn btn-primary form-submit"
+                type="submit"
+            >
+                Create account
+            </button>
+
+            <p class="auth-footer">
+                Already a member?
+                <a href="/pages/login">Sign in</a>
+            </p>
+
+        </form>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Report a lost item — FindIt</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/app.js"></script>
+</head>
+
+<body data-page="report-lost">
+
+    <header id="site-header"></header>
+
+    <main class="main">
+
+        <section class="container page-head">
+            <div class="eyebrow">Let's get it back to you</div>
+
+            <h1>Report a lost item</h1>
+
+            <p>
+                Share a few details to help your neighbors
+                recognize what you're missing.
+            </p>
+        </section>
+
+        <section class="container page-content two-col">
+
+            <form class="form-card" id="reportForm" data-type="lost">
+
+                <h2>Tell us what you lost</h2>
+
+                <p>
+                    The more details you share, the easier it is to spot a match.
+                </p>
+
+                <div id="formMessage"></div>
+
+                <div class="form-grid">
+
+                    <div class="field">
+                        <label for="title">Item name *</label>
+
+                        <input
+                            id="title"
+                            name="title"
+                            required
+                            minlength="3"
+                            maxlength="150"
+                            placeholder="e.g. Blue canvas backpack"
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="category">Category *</label>
+
+                        <select
+                            id="category"
+                            name="category"
+                            data-categories
+                            required
+                        ></select>
+                    </div>
+
+                    <div class="field full">
+                        <label for="description">Description *</label>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            required
+                            minlength="10"
+                            maxlength="5000"
+                            placeholder="Color, brand, unique details, what was inside…"
+                        ></textarea>
+                    </div>
+
+                    <div class="field">
+                        <label for="location">Where did you last see it? *</label>
+
+                        <input
+                            id="location"
+                            name="location"
+                            required
+                            maxlength="180"
+                            placeholder="e.g. Maple Park, near the east gate"
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="itemDate">Date lost *</label>
+
+                        <input
+                            id="itemDate"
+                            name="item_date"
+                            type="date"
+                            required
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="contactName">Contact name *</label>
+
+                        <input
+                            id="contactName"
+                            name="contact_name"
+                            required
+                            maxlength="100"
+                            placeholder="Your name"
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="contactEmail">Contact email *</label>
+
+                        <input
+                            id="contactEmail"
+                            name="contact_email"
+                            type="email"
+                            required
+                            maxlength="190"
+                            placeholder="you@example.com"
+                        >
+                    </div>
+
+                    <div class="field full">
+                        <label for="imageUrl">
+                            Photo link <span class="hint">(optional)</span>
+                        </label>
+
+                        <input
+                            id="imageUrl"
+                            name="image_url"
+                            type="url"
+                            maxlength="2048"
+                            placeholder="https://example.com/photo.jpg"
+                        >
+
+                        <span class="hint">
+                            Paste a publicly accessible image link;
+                            file uploads aren't enabled in this starter project.
+                        </span>
+                    </div>
+
+                </div>
+
+                <button
+                    class="btn btn-primary form-submit"
+                    type="submit"
+                >
+                    Publish lost report →
+                </button>
+
+            </form>
+
+            <aside class="sidebar-note">
+
+                <h3>A few helpful tips</h3>
+
+                <p>A thoughtful report makes a big difference.</p>
+
+                <ul>
+                    <li>Include color, brand, size, and distinctive marks.</li>
+                    <li>Share the closest location and date you can remember.</li>
+                    <li>Keep a detail private to confirm the item is yours.</li>
+                    <li>Meet somewhere public when arranging a handoff.</li>
+                </ul>
+
+                <a class="text-link" href="/pages/browse">
+                    Check existing reports first →
+                </a>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+</body>
+</html>
